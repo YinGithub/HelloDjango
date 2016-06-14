@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Search</title>
+</head>
+
+<body>
+<form action="/cardList" method="post">
+{% csrf_token %}
+<p> IMEI: <input type="text" name="q"></p>
+<input type="submit" value="search">
+</form>
+</body>
+</html>
